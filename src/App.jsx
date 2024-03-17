@@ -8,7 +8,7 @@ import {
   deriveActivePlayer,
   deriveGameBoard,
   deriveWinner,
-} from "./app-functions-and-variables";
+} from "./functionsAndVariables";
 
 function App() {
   const [players, setPlayers] = useState(PLAYERS);
@@ -64,7 +64,6 @@ function App() {
         )}
         <GameBoard onSelectSquare={handleSelectSquare} board={gameBoard} />
       </div>
-      <Log turns={gameTurns} />
     </main>
   );
 }
